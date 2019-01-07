@@ -1,19 +1,17 @@
-
-<div id="content" #content>  
-  <mat-card>  
-    <div class="alert alert-info">  
-        <strong>Html To PDF Conversion,preview,print and download - Angular 6</strong>  
-    </div>  
-    <div>  
-      <input type="button" value="print" (click)="printCheckList()"/>  
-      <input type="button" value="download" (click)="downloadPdf()"/>  
-
-    </div>  
-  </mat-card>  
+<div id="content" #content>
+  <mat-card>
+    <div class="alert alert-info">
+      <strong>Html To PDF Conversion, preview, print and download - Angular 6</strong>
+    </div>
+    <div>
+      <input type="button" value="print" (click)="printCheckList()" />
+      <input type="button" value="download" (click)="downloadPdf()" />
+    </div>
+  </mat-card>
   <div id='pdf-data'>
     <fieldset style="border:inset">
       <legend style="text-align:center ">PDF PREVIEW</legend>
-<div  [innerHTML]="data"></div>
-  </fieldset>
+      <div [innerHTML]="data"></div>
+    </fieldset>
+  </div>
 </div>
-</div>  
