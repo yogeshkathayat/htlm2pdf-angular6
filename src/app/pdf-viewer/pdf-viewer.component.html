@@ -1,0 +1,28 @@
+<!-- <p>
+  pdf-viewer works!
+</p>
+<button (click)="printPage()">print </button>
+<button (click)="downloadPdf()">download </button>
+<div class="pdf-container">
+  <pdf-viewer [src]="src"
+              [original-size]="false"
+  ></pdf-viewer>
+
+</div> -->
+
+
+<div id="content" #content>  
+  <mat-card>  
+    <div class="alert alert-info">  
+        <strong>Html To PDF Conversion - Angular 6</strong>  
+    </div>  
+    <div>  
+      <input type="button" value="print" (click)="printCheckList()"/>  
+      <input type="button" value="download" (click)="downloadPdf()"/>  
+
+    </div>  
+  </mat-card>  
+  <div id='pdf-data'>
+  <div  [innerHTML]="data"></div>
+</div>
+</div>  
