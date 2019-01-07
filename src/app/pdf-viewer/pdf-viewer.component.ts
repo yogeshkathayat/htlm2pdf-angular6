@@ -112,18 +112,9 @@ export class PdfViewerComponent implements OnInit {
   }
 
   async downloadPdf() {
-    // let pdf = new jspdf('p', 'mm', 'a4');
-    // let options = {
-    //     pagesplit: true
-    // };
-    // console.log("document.getElementById",document.getElementById("pdf-data"))
-    // pdf.addHTML(document.getElementById("pdf-data"),() => {
-    //     pdf.save("test.pdf");
-    // });
 
     let pdf = new jspdf('p', 'mm', 'a4'); // A4 size page of PDF 
     let canvas = await html2canvas(document.getElementById('pdf-data'));
-    console.log(canvas, "canvas")
     var imgWidth = 400;
     var pageHeight = 500;
     var imgHeight = canvas.height * imgWidth / canvas.width;
