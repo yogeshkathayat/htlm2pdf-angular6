@@ -8,10 +8,13 @@
       <input type="button" value="download" (click)="downloadPdf()" />
     </div>
   </mat-card>
-  <div id='pdf-data'>
-    <fieldset style="border:inset">
+
+    <fieldset style="border:inset;width:80%;">
       <legend style="text-align:center ">PDF PREVIEW</legend>
-      <div [innerHTML]="data"></div>
+      <div id='pdf-data'style="  margin:0; padding: 0;
+      font-family: 'Roboto', sans-serif;
+      max-width: 100%;
+      font-size: 10px;
+      padding:0 10px;" [innerHTML]="data"></div>
     </fieldset>
-  </div>
 </div>

@@ -1,5 +1,4 @@
-import { Component, Inject } from '@angular/core';
-
+import { Component, OnInit,Inject } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,4 +7,5 @@ import { Component, Inject } from '@angular/core';
 export class AppComponent {
   title = 'html to pdf viewer';
   constructor() {}
+
 }
